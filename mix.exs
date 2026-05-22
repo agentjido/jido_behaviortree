@@ -145,7 +145,7 @@ defmodule Jido.BehaviorTree.MixProject do
   defp deps do
     [
       # Core dependencies
-      {:jido, "~> 2.0"},
+      {:jido, "~> 2.3"},
       {:telemetry, "~> 1.3"},
       {:jason, "~> 1.4"},
 
@@ -161,7 +161,7 @@ defmodule Jido.BehaviorTree.MixProject do
       {:stream_data, "~> 1.0", only: [:dev, :test]},
 
       # Zoi and Splode
-      {:zoi, "~> 0.17"},
+      {:zoi, "~> 0.18"},
       {:splode, "~> 0.3"},
 
       # Git tooling
