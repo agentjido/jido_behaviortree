@@ -166,3 +166,7 @@ This package integrates with `jido_action` from the same monorepo:
 - Blackboard values can be passed as action parameters
 - Compatible with Jido's execution and instruction systems
 - Follows same code quality standards and testing approaches
+
+## Release Hygiene
+
+- Do not modify `CHANGELOG.md`; release notes are generated from Git history during release, so keep changes focused on proper Conventional Commits.
