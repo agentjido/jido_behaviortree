@@ -33,7 +33,6 @@ defmodule Jido.BehaviorTree.Agent do
   """
 
   use GenServer
-  require Logger
 
   alias Jido.Agent, as: JidoAgent
   alias Jido.BehaviorTree.{Tree, Tick, Blackboard, Error, Status}
