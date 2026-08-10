@@ -43,3 +43,16 @@ No unreleased changes.
 - `Skill.run/3` behavior changed: tree `:failure` is now an error result (`{:error, reason}`)
 - Telemetry consumers should listen on `[:jido, :bt, ...]` namespaces
 - See `guides/migration.md` for upgrade details
+
+<!-- changelog -->
+
+## [v1.0.1](https://github.com/agentjido/jido_behaviortree/compare/v1.0.0...v1.0.1) (2026-08-10)
+
+
+
+
+### Bug Fixes:
+
+* deps: update Mint for CVE-2026-59249 by mikehostetler
+
+* remove unused logger require by mikehostetler
