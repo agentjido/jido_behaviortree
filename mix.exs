@@ -163,7 +163,7 @@ defmodule Jido.BehaviorTree.MixProject do
 
       # Git tooling
       {:git_hooks, "~> 0.8", only: [:dev, :test], runtime: false},
-      {:git_ops, "~> 2.10.0", only: :dev, runtime: false}
+      {:git_ops, "~> 2.12", only: :dev, runtime: false}
     ]
   end
 
