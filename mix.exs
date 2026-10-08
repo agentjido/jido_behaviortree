@@ -153,7 +153,7 @@ defmodule Jido.BehaviorTree.MixProject do
   defp deps do
     [
       # Core dependencies
-      {:jido, "~> 2.4", override: true},
+      {:jido, "~> 2.4"},
       {:telemetry, "~> 1.3"},
       {:jason, "~> 1.4"},
 
