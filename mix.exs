@@ -129,7 +129,15 @@ defmodule Jido.BehaviorTree.MixProject do
 
   defp package do
     [
-      files: ["lib", "guides", "mix.exs", "README.md", "CHANGELOG.md", "usage-rules.md", "LICENSE.md"],
+      files: [
+        "lib",
+        "guides",
+        "mix.exs",
+        "README.md",
+        "CHANGELOG.md",
+        "usage-rules.md",
+        "LICENSE.md"
+      ],
       maintainers: ["Mike Hostetler"],
       licenses: ["Apache-2.0"],
       links: %{
@@ -145,7 +153,7 @@ defmodule Jido.BehaviorTree.MixProject do
   defp deps do
     [
       # Core dependencies
-      {:jido, "~> 2.3"},
+      {:jido, "~> 2.4"},
       {:telemetry, "~> 1.3"},
       {:jason, "~> 1.4"},
 
@@ -158,7 +166,7 @@ defmodule Jido.BehaviorTree.MixProject do
       {:excoveralls, "~> 0.18.3", only: [:dev, :test]},
 
       # Zoi and Splode
-      {:zoi, "~> 0.18"},
+      {:zoi, "~> 0.18.11"},
       {:splode, "~> 0.3"},
 
       # Git tooling
