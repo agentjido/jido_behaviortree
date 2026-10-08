@@ -129,7 +129,15 @@ defmodule Jido.BehaviorTree.MixProject do
 
   defp package do
     [
-      files: ["lib", "guides", "mix.exs", "README.md", "CHANGELOG.md", "usage-rules.md", "LICENSE.md"],
+      files: [
+        "lib",
+        "guides",
+        "mix.exs",
+        "README.md",
+        "CHANGELOG.md",
+        "usage-rules.md",
+        "LICENSE.md"
+      ],
       maintainers: ["Mike Hostetler"],
       licenses: ["Apache-2.0"],
       links: %{
@@ -145,8 +153,7 @@ defmodule Jido.BehaviorTree.MixProject do
   defp deps do
     [
       # Core dependencies
-      {:jido,
-       git: "https://github.com/agentjido/jido.git", ref: "0c8853bf451a40330b7192c9d2200a06f9c61261", override: true},
+      {:jido, "~> 2.4", override: true},
       {:telemetry, "~> 1.3"},
       {:jason, "~> 1.4"},
 
