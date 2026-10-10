@@ -232,6 +232,10 @@ This package integrates with the broader Jido ecosystem:
 - **jido** - Main agent framework for autonomous systems
 - **jido_signal** - Signal processing and event handling
 
+## Local Documentation
+
+Run `mix docs` to generate HTML and Markdown documentation in `doc/`, including Markdown pages and `llms.txt`.
+
 ## License
 
 Apache 2.0 - See [LICENSE.md](https://github.com/agentjido/jido_behaviortree/blob/main/LICENSE.md)

@@ -89,7 +89,7 @@ defmodule Jido.BehaviorTree.MixProject do
       groups_for_extras: [
         Guides: ~r/guides\/.*/
       ],
-      formatters: ["html"],
+      formatters: ["html", "markdown"],
       skip_undefined_reference_warnings_on: [
         "CHANGELOG.md",
         "LICENSE.md"
@@ -162,7 +162,7 @@ defmodule Jido.BehaviorTree.MixProject do
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
       {:mix_audit, "~> 2.0", only: [:dev, :test], runtime: false},
       {:doctor, "~> 0.21", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.40.1", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.40.4", only: :dev, runtime: false},
       {:excoveralls, "~> 0.18.3", only: [:dev, :test]},
 
       # Zoi and Splode
@@ -179,7 +179,6 @@ defmodule Jido.BehaviorTree.MixProject do
     [
       test: "test --exclude flaky",
       "coverage.check": ["coveralls.json", "run scripts/coverage_gate.exs"],
-      docs: "docs -f html",
       q: ["quality"],
       quality: [
         "format --check-formatted",
